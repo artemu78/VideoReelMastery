@@ -54,9 +54,14 @@ export default function Tools() {
                     whileHover={{ scale: 1.05 }}
                   >
                     <img 
-                      src={`https://source.unsplash.com/random/800x600?tech,app,${index + 1}`}
+                      src={`/client/src/assets/images/tool-${tool.name === "CapCut" ? "capcut" : 
+                            tool.name === "Pika Labs" ? "pika" : 
+                            tool.name === "Eleven Labs" ? "eleven-labs" : 
+                            tool.name === "KlingAI" ? "klingai" : 
+                            tool.name === "Sora" ? "sora" : 
+                            "hailuo"}.svg`}
                       alt={tool.name} 
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </motion.div>
                 </div>

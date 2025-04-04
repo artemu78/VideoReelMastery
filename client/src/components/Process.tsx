@@ -73,11 +73,16 @@ export default function Process() {
               </div>
               
               <div className={`md:w-5/12 z-10 order-1 md:order-${index % 2 === 0 ? '2' : '1'}`}>
-                <div className="h-48 md:h-64 bg-gray-200 rounded-xl overflow-hidden shadow-lg">
+                <div className="h-48 md:h-64 bg-gray-200 rounded-xl overflow-hidden shadow-lg flex items-center justify-center p-4">
                   <img 
-                    src={`https://source.unsplash.com/random/800x600?video,editing,${step.id}`}
+                    src={`/client/src/assets/images/process-${step.id === 1 ? 'ai-script' : 
+                          step.id === 2 ? 'voice' : 
+                          step.id === 3 ? 'visuals' : 
+                          step.id === 4 ? 'library' : 
+                          step.id === 5 ? 'sound' : 
+                          'capcut'}.svg`}
                     alt={step.title} 
-                    className="w-full h-full object-cover"
+                    className="h-full object-contain"
                   />
                 </div>
               </div>

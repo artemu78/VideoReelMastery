@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
         <img 
-          src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80" 
+          src="/client/src/assets/images/hero-bg.svg" 
           alt="Video production background" 
           className="object-cover w-full h-full"
         />

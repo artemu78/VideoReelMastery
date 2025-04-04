@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440" height="800" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="1440" height="800" fill="url(#paint0_linear)" />
+  
+  <!-- Abstract shapes representing video editing and AI -->
+  <circle cx="200" cy="300" r="100" fill="#FF5757" opacity="0.4"/>
+  <circle cx="1200" cy="500" r="150" fill="#57A0FF" opacity="0.4"/>
+  <rect x="400" y="200" width="200" height="200" rx="20" fill="#57FFB1" opacity="0.3"/>
+  <rect x="800" y="400" width="250" height="150" rx="20" fill="#D157FF" opacity="0.3"/>
+  
+  <!-- Video editing frame elements -->
+  <rect x="600" y="200" width="400" height="250" rx="10" stroke="#FFFFFF" stroke-width="4" opacity="0.6" stroke-dasharray="10 5"/>
+  
+  <!-- Timeline bar representation -->
+  <rect x="500" y="500" width="600" height="30" rx="15" fill="#FFFFFF" opacity="0.2"/>
+  <rect x="520" y="505" width="150" height="20" rx="10" fill="#FF5757" opacity="0.8"/>
+  <rect x="690" y="505" width="120" height="20" rx="10" fill="#57A0FF" opacity="0.8"/>
+  <rect x="830" y="505" width="90" height="20" rx="10" fill="#57FFB1" opacity="0.8"/>
+  <rect x="940" y="505" width="130" height="20" rx="10" fill="#D157FF" opacity="0.8"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1440" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F0F1E"/>
+      <stop offset="1" stop-color="#292952"/>
+    </linearGradient>
+  </defs>
+</svg>
