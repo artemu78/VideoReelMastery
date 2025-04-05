@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { REAL_IMAGES } from "@/lib/constants";
+
+// Set to true to use real images, false to use SVGs
+const USE_REAL_IMAGES = true;
 
 export default function Hero() {
   return (
@@ -8,7 +12,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
         <img 
-          src="/client/src/assets/images/hero-bg.svg" 
+          src={USE_REAL_IMAGES ? REAL_IMAGES.hero : "/src/assets/images/hero-bg.svg"}
           alt="Video production background" 
           className="object-cover w-full h-full"
         />

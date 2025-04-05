@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { AI_TOOLS } from "@/lib/constants";
+import { AI_TOOLS, REAL_IMAGES } from "@/lib/constants";
+
+// Set to true to use real images, false to use SVGs
+const USE_REAL_IMAGES = true;
 
 export default function Tools() {
   const container = {
@@ -54,14 +57,22 @@ export default function Tools() {
                     whileHover={{ scale: 1.05 }}
                   >
                     <img 
-                      src={`/client/src/assets/images/tool-${tool.name === "CapCut" ? "capcut" : 
+                      src={USE_REAL_IMAGES
+                        ? tool.name === "CapCut Video Editor" ? REAL_IMAGES.tools.capcut
+                          : tool.name === "ElevenLabs" ? REAL_IMAGES.tools.elevenLabs
+                          : tool.name === "Pika Labs" ? REAL_IMAGES.tools.pikaLabs
+                          : tool.name === "Sora" ? REAL_IMAGES.tools.sora
+                          : tool.name === "KlingAI" ? REAL_IMAGES.tools.klingAI
+                          : REAL_IMAGES.tools.hailuoAI
+                        : `/src/assets/images/tool-${tool.name === "CapCut Video Editor" ? "capcut" : 
                             tool.name === "Pika Labs" ? "pika" : 
-                            tool.name === "Eleven Labs" ? "eleven-labs" : 
+                            tool.name === "ElevenLabs" ? "eleven-labs" : 
                             tool.name === "KlingAI" ? "klingai" : 
                             tool.name === "Sora" ? "sora" : 
-                            "hailuo"}.svg`}
+                            "hailuo"}.svg`
+                      }
                       alt={tool.name} 
-                      className="w-full h-full object-contain"
+                      className={`w-full h-full ${USE_REAL_IMAGES ? 'object-cover' : 'object-contain'}`}
                     />
                   </motion.div>
                 </div>

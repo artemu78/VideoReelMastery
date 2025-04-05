@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { VIDEO_CREATION_STEPS } from "@/lib/constants";
+import { VIDEO_CREATION_STEPS, REAL_IMAGES } from "@/lib/constants";
+
+// Set to true to use real images, false to use SVGs
+const USE_REAL_IMAGES = true;
 
 export default function Process() {
   return (
@@ -75,14 +78,22 @@ export default function Process() {
               <div className={`md:w-5/12 z-10 order-1 md:order-${index % 2 === 0 ? '2' : '1'}`}>
                 <div className="h-48 md:h-64 bg-gray-200 rounded-xl overflow-hidden shadow-lg flex items-center justify-center p-4">
                   <img 
-                    src={`/client/src/assets/images/process-${step.id === 1 ? 'ai-script' : 
+                    src={USE_REAL_IMAGES 
+                      ? step.id === 1 ? REAL_IMAGES.process.aiScript 
+                        : step.id === 2 ? REAL_IMAGES.process.voice
+                        : step.id === 3 ? REAL_IMAGES.process.aiVideo
+                        : step.id === 4 ? REAL_IMAGES.process.stockMedia
+                        : step.id === 5 ? REAL_IMAGES.process.sound
+                        : REAL_IMAGES.process.capcut
+                      : `/src/assets/images/process-${step.id === 1 ? 'ai-script' : 
                           step.id === 2 ? 'voice' : 
                           step.id === 3 ? 'visuals' : 
                           step.id === 4 ? 'library' : 
                           step.id === 5 ? 'sound' : 
-                          'capcut'}.svg`}
+                          'capcut'}.svg`
+                    }
                     alt={step.title} 
-                    className="h-full object-contain"
+                    className={`${USE_REAL_IMAGES ? 'w-full h-full object-cover' : 'h-full object-contain'}`}
                   />
                 </div>
               </div>

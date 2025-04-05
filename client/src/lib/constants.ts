@@ -1,3 +1,28 @@
+// Image URLs from Pexels and other free stock image sites with appropriate attribution
+export const REAL_IMAGES = {
+  hero: "https://images.pexels.com/photos/2173508/pexels-photo-2173508.jpeg", // Creative workspace setup
+  
+  // Process steps
+  process: {
+    aiScript: "https://images.pexels.com/photos/7413915/pexels-photo-7413915.jpeg", // Laptop with text/AI 
+    voice: "https://images.pexels.com/photos/8412420/pexels-photo-8412420.jpeg", // Microphone setup
+    aiVideo: "https://images.pexels.com/photos/7048048/pexels-photo-7048048.jpeg", // Digital art/visuals
+    stockMedia: "https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg", // Media library concept
+    sound: "https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg", // Audio mixer
+    capcut: "https://images.pexels.com/photos/2244082/pexels-photo-2244082.jpeg" // Video editing workstation
+  },
+  
+  // Tools
+  tools: {
+    capcut: "https://images.pexels.com/photos/3062542/pexels-photo-3062542.jpeg", // Video edit timeline
+    elevenLabs: "https://images.pexels.com/photos/1337247/pexels-photo-1337247.jpeg", // Sound waves
+    pikaLabs: "https://images.pexels.com/photos/5473302/pexels-photo-5473302.jpeg", // Digital art
+    sora: "https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg", // AI visual concept
+    klingAI: "https://images.pexels.com/photos/1820567/pexels-photo-1820567.jpeg", // Creative visuals
+    hailuoAI: "https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg" // Motion graphics concept
+  }
+};
+
 export const VIDEO_CREATION_STEPS = [
   {
     id: 1,
