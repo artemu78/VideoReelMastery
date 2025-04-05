@@ -20,6 +20,13 @@ export const REAL_IMAGES = {
     sora: "https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg", // AI visual concept
     klingAI: "https://images.pexels.com/photos/1820567/pexels-photo-1820567.jpeg", // Creative visuals
     hailuoAI: "https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg" // Motion graphics concept
+  },
+  
+  // Testimonial avatars
+  testimonials: {
+    sarah: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg", // Professional woman headshot
+    marcus: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg", // Professional man headshot
+    elena: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" // Professional woman headshot
   }
 };
 
